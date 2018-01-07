@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFLibraryEinsteinGame", "WCFLibraryEinsteinGame\WCFLibraryEinsteinGame.csproj", "{C63290E4-6039-4BFB-9A9F-71590549E026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EinsteinGameClient1", "EinsteinGameClient1\EinsteinGameClient1.csproj", "{D6740845-9BBF-4555-96BB-D4CF8A7980AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C63290E4-6039-4BFB-9A9F-71590549E026} = {C63290E4-6039-4BFB-9A9F-71590549E026}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFLibraryEinsteinGameTests", "WCFLibraryEinsteinGameTests\WCFLibraryEinsteinGameTests.csproj", "{69F2F1EA-A7A5-4210-8D78-679FAF24A711}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C63290E4-6039-4BFB-9A9F-71590549E026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63290E4-6039-4BFB-9A9F-71590549E026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63290E4-6039-4BFB-9A9F-71590549E026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63290E4-6039-4BFB-9A9F-71590549E026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6740845-9BBF-4555-96BB-D4CF8A7980AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6740845-9BBF-4555-96BB-D4CF8A7980AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6740845-9BBF-4555-96BB-D4CF8A7980AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6740845-9BBF-4555-96BB-D4CF8A7980AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F2F1EA-A7A5-4210-8D78-679FAF24A711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F2F1EA-A7A5-4210-8D78-679FAF24A711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F2F1EA-A7A5-4210-8D78-679FAF24A711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F2F1EA-A7A5-4210-8D78-679FAF24A711}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {118134FE-F36D-4FE8-94DD-50F9EF8D7131}
+	EndGlobalSection
+EndGlobal
