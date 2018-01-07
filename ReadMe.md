@@ -14,16 +14,15 @@ in that way.
 
 ## 2. EinsteinGameClient
 
-Due to time I decide to make an Application Client instead of a web client, although it's not the same, it allows us to try the application
+Due to time I decide to make an Application Client instead of a web client, although, it's not the same but it allows us to try the application
 in a clearly way.
 
-It's compose for a Program class wich initialize "EinsteinGameClient" that is essentially a Form with 2 labels, 2 textbox and 1 botton to 
-start.
-On the background code of the form I decide to add a small input-type controll to make sure that the correct parameter is introduced.
+It's compose for a Program class wich initialize "EinsteinGameClient" that is essentially a Form with 2 labels, 2 textbox and 1 start botton.
+On the background code of the form I decided to add a small input-type controll to make sure that the correct parameter is introduced.
 
 ## 3. WCFLibraryEinsteinGame
 
-It contains the full logic of the application. The proyect is divide by folders:
+It contains the full logic of the applicatio and it's divide by folders(they act like layers):
 
 - Application: Contains the classes that executes the game.
 - Distributed Services: Contains the service call by the client.
@@ -68,12 +67,11 @@ called for the client side, also, it contains the multhread calls:
 
                 });
 ```
-The reason why I decide to use a Parallel.For instead of a Parallel.ForEach is because with Parallel.For you can in some way control
+The reason why I decide to use a Parallel.For instead of a Parallel.ForEach is because with Parallel.For you can, in some way, control
 the order but it's no efficient. Parallel.For controls that no more that the Maximum number of threads is execute at the same time wich
 take this information from the App.Config.
 You also can apreciate the Catch clausure wich can handle EinsteinGameException (Custom Exceptions) and also Exception that I decide
-to control also because some Parse Error could occur and need to be handle. Because we are in a loop this exception just catch them and
-rethrow to the external catch wich writes the exception into de Log file and then return a custom Error EinsteinGameDto.
+to control also because some Parse Error could occur and they need to be handle. Because we are in a loop this exception just catch them and rethrow to the external catch wich writes the exception into the Log file and then return a custom Error EinsteinGameDto.
 
 #### 3.1.2 GameCore.cs
 
