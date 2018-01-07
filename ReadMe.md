@@ -153,10 +153,13 @@ For this test I had to use DI to inyect the Mocks created for the test in the fo
           // We declare de mocks
             var GameMock = new Mock<IGameCore>();
             var FileMock = new Mock<IFileManager>();
+            
 ```            
 After add the desire result to the different function, Insert into de Main class:
-
+```
  EinsteinGame.SetParameters(GameMock.Object, FileMock.Object);
+ 
+ ```
  
 ### 4.2 Integration test
  
