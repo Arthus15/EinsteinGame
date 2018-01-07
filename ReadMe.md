@@ -1,7 +1,7 @@
 Einstein Game ------> Develop by Jairo Blanco Aldao ----> Made with Visual Studio 2017
----------------------------------------------------
+--------------------------------------------------------------------------------------
 
-1. Introduction
+##1. Introduction
 
 The main goal of this exercise is to create a WCF RestFull WebService solving the following:
 Any number divisible by three is replaced by the word fizz and any divisible by five by the word buzz. Numbers divisible by both become
