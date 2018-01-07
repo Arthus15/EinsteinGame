@@ -56,17 +56,14 @@ namespace WCFLibraryEinsteinGame
                     catch (EinsteinGameExceptions e)
                     {
 
-                        //We write the exception on the log file
-                        Log.Error("An error occur during the excution: " + e.Message);
-                        Log.Info("Game finished with errors");
+                        throw e;
 
 
                     }
                     catch (Exception e)
                     {
-                        //We write the exception on the log file
-                        Log.Error(e);
-                        Log.Info("Game finished with errors");
+                        
+                        throw e;
                     }
 
                 });
@@ -77,13 +74,14 @@ namespace WCFLibraryEinsteinGame
                 Log.Error("An error occur during the excution: " + e.Message);
                 Log.Info("Game finished with errors");
                 //Return a error list TODO ERROR LIST
-                return new EinsteinGameDto(FileManager.getList());
+                return new EinsteinGameDto(new List<string> { "Controled error occurs during execution please check log file" });
             }
             catch (Exception e)
             {
                 //We write the exception on the log file
                 Log.Error(e);
                 Log.Info("Game finished with errors");
+                return new EinsteinGameDto(new List<string> { "Uncontrolled error occurs during execution" });
             }
             EinsteinGameDto GameResult = new EinsteinGameDto(FileManager.getList());
 
